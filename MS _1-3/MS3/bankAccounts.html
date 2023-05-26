@@ -6,62 +6,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
     <link href="mainnour.css" rel="stylesheet" >
-    
-    <title>Personal Loan Application</title>
-	
-	<style>
-		form {
-			margin: 0 auto;
-			max-width: 800px;
-			padding: 20px;
-			background-color: #f2f2f2;
-			border-radius: 10px;
-			box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
-			display: flex;
-			flex-direction: column;
-			align-items: left;
-		}
-		label {
-			display: block;
-			margin-bottom: 5px;
-			font-weight: bold;
-		}
-		input[type="text"], input[type="email"], input[type="tel"], input[type="number"], select, textarea {
-			width: 100%;
-			padding: 10px;
-			border: 1px solid #ccc;
-			border-radius: 5px;
-			margin-bottom: 20px;
-			box-sizing: border-box;
-			font-size: 16px;
-		}
-		input[type="submit"] {
-			background-color: #4CAF50;
-			color: white;
-			padding: 12px 20px;
-			border: none;
-			border-radius: 4px;
-			cursor: pointer;
-			font-size:18px;
-			margin-bottom: 20px;
-		}
-		.file-upload {
-			display: flex;
-			flex-direction: column;
-			align-items: center;
-			margin-top: 20px;
-		}
-		.file-upload label {
-			font-weight: bold;
-			margin-bottom: 10px;
-		}
-		.file-upload input[type="file"] {
-			margin-bottom: 10px;
-		}
+    <title>Document</title>
 
-        
-	</style>
+    <style>
 
+.currSign:before {
+        content: '$';
+    }
+
+    .flex-container{
+  display: flex;
+  height: 80vh;
+   justify-content: center;
+   align-items: center;
+   gap: 60px;
+ }
+
+    </style>
 </head>
 <body>
 
@@ -173,67 +134,62 @@
  <!--END of Subheader header-->
 
   <!--Start of body-->
+  
+<div class="flex-container" style="background-color: aliceblue; flex-direction: column;">
+  <!--Add your content here!!!!!!!!!!!!!!!!-->
+  <h1 style="align-items: center; color: black;">Your Bank Accounts</h1>
+  <table class="table table-hover" style="width: 70%;">
+    <thead>
+      <tr>
+        <th scope="col">Bank Account Number</th>
+        <th scope="col">Account Type</th>
+        <th scope="col">Balance</th>
+        <th scope="col">View transactions</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>  
+        <th scope="row">234766873992</th>
+        <td>Saving</td>
+        <td class="myDIV">1002000011</td>
+        <td><a href="./bankAccountTransactions.html" class="view-transactions" data-account-number="234766873992">
+            <!-- Add an SVG icon with an ID and an onclick event -->
+            <svg xmlns="http://www.w3.org/2000/svg"  width="16" height="16" fill="currentColor" class="bi bi-eye" style="color: black;" viewBox="0 0 16 16" id="view-icon" onclick="viewPage()">
+              <path d="M16 8s-3-5.5-8-5.5S0 8 0 8s3 5.5 8 5.5S16 8 16 8zM1.173 8a13.133 13.133 0 0 1 1.66-2.043C4.12 4.668 5.88 3.5 8 3.5c2.12 0 3.879 1.168 5.168 2.457A13.133 13.133 0 0 1 14.828 8c-.058.087-.122.183-.195.288-.335.48-.83 1.12-1.465 1.755C11.879 11.332 10.119 12.5 8 12.5c-2.12 0-3.879-1.168-5.168-2.457A13.134 13.134 0 0 1 1.172 8z"/>
+              <path d="M8 5.5a2.5 2.5 0 1 0 0 5 2.5 2.5 0 0 0 0-5zM4.5 8a3.5 3.5 0 1 1 7 0 3.5 3.5 0 0 1-7 0z"/>
+            </svg>
+          </a></td>
+      </tr>
+      <tr>
+        <th scope="row">423423442224</th>
+        <td>Saving</td>
+        <td class="myDIV">123333</td>
+        <td><a href="./bankAccountTransactions.html" class="view-transactions" data-account-number="423423442224">
+            <!-- Add an SVG icon with an ID and an onclick event -->
+            <svg xmlns="http://www.w3.org/2000/svg"  width="16" height="16" fill="currentColor" class="bi bi-eye" style="color: black;" viewBox="0 0 16 16" id="view-icon" onclick="viewPage()">
+              <path d="M16 8s-3-5.5-8-5.5S0 8 0 8s3 5.5 8 5.5S16 8 16 8zM1.173 8a13.133 13.133 0 0 1 1.66-2.043C4.12 4.668 5.88 3.5 8 3.5c2.12 0 3.879 1.168 5.168 2.457A13.133 13.133 0 0 1 14.828 8c-.058.087-.122.183-.195.288-.335.48-.83 1.12-1.465 1.755C11.879 11.332 10.119 12.5 8 12.5c-2.12 0-3.879-1.168-5.168-2.457A13.134 13.134 0 0 1 1.172 8z"/>
+              <path d="M8 5.5a2.5 2.5 0 1 0 0 5 2.5 2.5 0 0 0 0-5zM4.5 8a3.5 3.5 0 1 1 7 0 3.5 3.5 0 0 1-7 0z"/>
+            </svg>
+          </a></td>
+      </tr>
+      <tr>
+        <th scope="row">92334211234322</th>
+        <td>Saving</td>
+        <td class="myDIV">1000000</td>
+        <td><a href="./bankAccountTransactions.html" class="view-transactions" data-account-number="923342112343">
+            <!-- Add an SVG icon with an ID and an onclick event -->
+            <svg xmlns="http://www.w3.org/2000/svg"  width="16" height="16" fill="currentColor" class="bi bi-eye" style="color: black;" viewBox="0 0 16 16" id="view-icon" onclick="viewPage()">
+              <path d="M16 8s-3-5.5-8-5.5S0 8 0 8s3 5.5 8 5.5S16 8 16 8zM1.173 8a13.133 13.133 0 0 1 1.66-2.043C4.12 4.668 5.88 3.5 8 3.5c2.12 0 3.879 1.168 5.168 2.457A13.133 13.133 0 0 1 14.828 8c-.058.087-.122.183-.195.288-.335.48-.83 1.12-1.465 1.755C11.879 11.332 10.119 12.5 8 12.5c-2.12 0-3.879-1.168-5.168-2.457A13.134 13.134 0 0 1 1.172 8z"/>
+              <path d="M8 5.5a2.5 2.5 0 1 0 0 5 2.5 2.5 0 0 0 0-5zM4.5 8a3.5 3.5 0 1 1 7 0 3.5 3.5 0 0 1-7 0z"/>
+            </svg>
+          </a>
+          </td>
+      </tr>
+    </tbody>
+  </table>
 
-<div id="my-form-container" style=" background-color: aliceblue;">
-  <br>
-  <br>
-    <form id="my-form">
-    <label for="name">Name:</label>
-    <input type="text" id="name" name="name" required>
-
-    <label for="email">Email:</label>
-    <input type="email" id="email" name="email" required>
-
-    <label for="phone">Phone:</label>
-    <input type="tel" id="phone" name="phone" required>
-
-    <label for="employer">Employer:</label>
-    <input type="text" id="employer" name="employer" required>
-
-    <label for="job-title">Job Title:</label>
-    <input type="text" id="job-title" name="job-title" required>
-
-    <label for="income">Annual Income:</label>
-    <input type="number" id="income" name="income" required>
-
-    <label for="assets">Total Assets:</label>
-    <input type="number" id="assets" name="assets" required>
-
-    <label for="liabilities">Total Liabilities:</label>
-    <input type="number" id="liabilities" name="liabilities" required>
-
-    <label for="amount">Loan Amount:</label>
-    <input type="number" id="amount" name="amount" required>
-
-    <label for="purpose">Loan Purpose:</label for="purpose">Loan Purpose:</label>
-    <select id="purpose" name="purpose" required>
-        <option value="">Select a purpose</option>
-        <option value="Home Improvement">Home Improvement</option>
-        <option value="Debt Consolidation">Debt Consolidation</option>
-        <option value="Education">Education</option>
-        <option value="Business">Business</option>
-        <option value="Other">Other</option>
-    </select>
-
-    <label for="message">Additional Comments:</label>
-    <textarea id="message" name="message"></textarea>
-    <div class="file-upload">
-        <label for="bank-statement">Upload Bank Statement</label>
-        <input type="file" id="bank-statement" name="bank-statement">
-    </div>
-</br>
-</br>
-    <input type="submit" value="Submit">
-</br>
-</br>
-
-</br>
-</form>
+  
 </div>
-<div class="flex-container" id="success-message-container" style="display:none ;">
-    <p style="color: black;">Form submitted successfully!</p>
-  </div>
-
 
 
 
@@ -244,7 +200,7 @@
 
 
     
-<div class="container-fluid" >
+<div class="container-fluid">
 
   <div class="row fixed-row-bottom" id="foot">
       <nav class="navbar" >
@@ -272,7 +228,21 @@
 </body>
 </html>
 <script>
+var viewLinks = document.querySelectorAll('.view-transactions');
 
+// Loop through the links and add a click event listener to each one
+viewLinks.forEach(function(link) {
+  link.addEventListener('click', function(event) {
+    // Prevent the default link behavior
+    event.preventDefault();
+    
+    // Get the account number from the data attribute
+    var accountNumber = this.getAttribute('data-account-number');
+    
+    // Redirect to the view_transactions.html page with the account number as a query parameter
+    window.location.href = 'bankAccountTransactions.html?account_number=' + accountNumber;
+  });
+});
 window.onclick = function(event) {
   if (!event.target.matches('.dropbtn')) {
     const dropdowns = document.getElementsByClassName('dropdown-content');
@@ -283,20 +253,14 @@ window.onclick = function(event) {
     }
   }
 }
-const form = document.querySelector('#my-form');
-    form.addEventListener('submit', handleSubmit);
-
-    function handleSubmit(event) {
-      event.preventDefault();
-      // process the form data here
-
-      // hide the form container
-      const formContainer = document.querySelector('#my-form-container');
-      formContainer.style.display = 'none';
-
-      // show the success message container
-      const successContainer = document.querySelector('#success-message-container');
-      successContainer.style.display = 'flex';
+function viewPage() {
+    window.location.href = "http://example.com";
+  }
+let x = document.querySelectorAll(".myDIV");
+    for (let i = 0, len = x.length; i < len; i++) {
+        let num = Number(x[i].innerHTML)
+            .toLocaleString('en');
+        x[i].innerHTML = num;
+        x[i].classList.add("currSign");
     }
-
 </script>
