@@ -1,0 +1,101 @@
+.container {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  h1 {
+    margin-bottom: 20px;
+  }
+  
+  input[type="text"],
+  input[type="password"],
+  input[type="email"] {
+    width: 70%;
+    padding: 10px;
+    margin-bottom: 20px;
+  }
+  
+  input[type="submit"] {
+    background-color: #003573;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    border-radius: 50px;
+    display: block;
+    margin: 0 auto;
+    width: 70%;
+    margin-top: 10px;
+    margin-bottom: 10px; /* Add margin-bottom to create space */
+  }
+  
+  input[type="submit"]:hover {
+    background-color: #88a5c4;
+  }
+  
+  .logo {
+    display: block;
+    margin: 0 auto;
+    max-width: 200px;
+    margin-bottom: 20px;
+  }
+  
+  .forgot-password {
+    text-align: left;
+    margin-bottom: 10px;
+    margin-left: 12%;
+  }
+  
+  .forgot-password a {
+    color: #88a5c4;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  .forgot-password a:hover {
+    text-decoration: underline;
+    color: #003573;
+  }
+  
+  #message {
+    color: red;
+  }
+  .signup-line {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 10px 0;
+  }
+  
+  .signup-line hr {
+    flex-grow: 0.07;
+    border: none;
+    border-top: 1px solid #000;
+    margin: 0 10px;
+  }
+  .or-text {
+    margin: 0 10px;
+    color: #000;
+  }
+  
+  .signup-option {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .signup-option p {
+    margin: 0;
+    text-align: center;
+  }
+  .signup-option a {
+    color: #003573;
+    text-decoration: none;
+  }
+  
+  .signup-option a:hover {
+    text-decoration: underline;
+  }
+  
