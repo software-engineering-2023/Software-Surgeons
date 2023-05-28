@@ -25,6 +25,11 @@ body {
 }
 
 
+.wide {
+  min-width: 1000px;
+  
+}
+
 .tableHead {
   background-color: darkgray;
   font-weight: 600;
