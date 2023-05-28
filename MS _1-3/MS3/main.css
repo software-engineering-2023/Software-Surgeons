@@ -30,6 +30,13 @@ body {
   
 }
 
+
+.wide2 {
+  min-width: 1200px;
+  
+}
+
+
 .tableHead {
   background-color: darkgray;
   font-weight: 600;
