@@ -1,0 +1,228 @@
+ 
+p {
+    font-family: 'Bahnschrift', sans-serif;
+    color: white;                                            
+  }
+  
+  a{
+    font-family: 'Bahnschrift', sans-serif;
+    color: white; 
+    text-decoration: none;
+    font-style: bold; 
+  }
+  
+  body{
+    margin: 0;
+  }
+  
+  h1{
+    font-family: 'Bahnschrift', sans-serif;
+    color: white; 
+  }
+  
+  h3{
+    font-family: 'Bahnschrift', sans-serif;
+    color: white; 
+  }
+  
+  h4{
+    font-family: 'Bahnschrift', sans-serif;
+    color: white; 
+  }
+  
+  h5{
+    font-family: 'Bahnschrift', sans-serif;
+    color: white; 
+  }
+  
+  h6{
+    font-family: 'Bahnschrift', sans-serif;
+    color: white; 
+  }
+  
+  #head{
+    background-color: #003573;
+    height: 80px;
+  }
+  
+  #foot{
+    background-color: #003573;
+    height: 50px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+  }
+  
+  
+  #subhead{
+    background-color: #88a5c4;
+    height: 40px;
+  }
+  
+  
+  
+  
+  .group{
+    display: flex;
+    justify-content: center;
+    margin: 0;
+  
+  }
+  
+  .group #subbarbtn{
+    
+      display: inline-block;
+      background-color: transparent;
+      color: white;
+      font-size: 14px;
+      font-style: bold;
+      margin-left: 20px;
+      margin-bottom: 2px;
+      height: 30px;
+      border: none;
+      outline: none;
+      cursor: pointer;
+      font-family: 'Bahnschrift', sans-serif;
+  
+  }
+  
+  .group #subbarbtn:hover{
+    background-color: #003573;
+  
+  }
+  
+  
+  
+  
+  
+  
+  .dropdown {
+    position: relative;
+    display: inline-block;
+    
+  }
+  
+  .dropbtn {
+    background-color: transparent;
+    color: white;
+    size: 5px;
+    margin-bottom: 20px;
+    border: none;
+    cursor: pointer;
+  }
+  
+  
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    z-index: 1;
+  }
+  
+  .dropdown-content a {
+    color: black;
+    background-color: grey;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    width: 500px;
+    border-bottom: 5px;
+    border-color: black;
+  }
+  
+  
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+  
+  .logbtn{
+    background-color: white;
+    height: 32px;
+    border: none;
+    color: #003573;
+    font-size: 10px;
+    font-family: 'Bahnschrift', sans-serif;
+    font-style: bold;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 16px;
+  
+    margin-left: 50px;
+  }
+  
+  
+  
+  /* Style the dropdown button text */
+  .dropdown2 button {
+    display: inline-block;
+    background-color: transparent;
+    color: white;
+    font-size: 14px;
+    font-style: bold;
+    margin-left: 20px;
+    margin-bottom: 2px;
+    height: 30px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    
+          font-family: 'Bahnschrift', sans-serif;
+  }
+  .dropdown2:hover button{
+    background-color: #003573;
+  }
+  
+  /* Style the dropdown content */
+  .dropdown-content2 {
+    display: none;
+    position: absolute;
+    background-color: grey;
+    min-width: 160px;
+    z-index: 1;
+  }
+  
+  /* Style the options inside the dropdown */
+  .dropdown-content2 option {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+          font-family: 'Bahnschrift', sans-serif;
+        
+  }
+  
+  /* Show the dropdown content when the button is clicked */
+  .dropdown2:hover .dropdown-content2 {
+    display: block;
+    
+  }
+  .dropdown-content2 option:hover{
+    background-color: darkgray;
+  }
+  
+  .fa-youtube {
+    background: #bb0000;
+    color: white;
+  }
+  
+  .fa-facebook {
+    background: #3B5998;
+    color: white;
+  }
+  
+  .fa-linkedin {
+    background: #007bb5;
+    color: white;
+  }
+  
+  .fa-instagram {
+    background: #125688;
+    color: white;
+  }
+  
+  
+  

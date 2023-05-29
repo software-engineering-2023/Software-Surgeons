@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <link href="mainnour.css" rel="stylesheet" >
+    
+    <title>Open Bank Account Application</title>
+	
+	<style>
+	
+		label {
+			display: block;
+			margin-bottom: 5px;
+			font-weight: bold;
+    }
+		
+		.file-upload {
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			margin-top: 20px;
+		}
+		.file-upload label {
+			font-weight: bold;
+			margin-bottom: 10px;
+		}
+		.file-upload input[type="file"] {
+			margin-bottom: 10px;
+		}
+
+        .flex-container{
+  display: flex;
+  height: 80vh;
+   justify-content: center;
+   align-items: center;
+   gap: 60px;
+ }
+ input[type="text"],
+input[type="number"],
+input[type="password"],
+input[type="datetime-local"],
+input[type="email"],
+input[type="tel"],
+input[type="form-control"] {
+  display: block;
+  width: 60%;
+  padding: 8px;
+  font-size: 14px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+  margin-bottom: 20px;
+  
+  
+}
+
+input[type="submit"] {
+  background-color: #003573;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  font-size: 12px;
+  cursor: pointer;
+  margin-left: 70px;
+}
+input[type="submit"]:hover {
+  background-color: white;
+  color:  #003573;
+}
+
+	</style>
+
+</head>
+<body>
+
+  <!--Start of Main header-->
+ 
+
+
+   
+
+        <div class="container-fluid">
+
+    <div class="row" >
+        <nav class="navbar"  id="head">
+        <div class="col-auto">
+
+          <img src="images/logowhite.png" style="width: 84px; margin-bottom: 6px;">
+
+        </div>
+        <div class="col">
+              <h6>Welcome Youssef Alaa Mahmoud Amer</h6>
+
+              <p style="font-size: 7px;">Your last time login was on:<br> 18/05/2023  1:26 PMCLT <br> You have 0 unsuccessfull tries <br> since your last login</p>
+        </div>
+
+        <div class="col-5">
+            
+              
+                <div class="dropdown">
+                    <button class="dropbtn"><img src="images/bell.png" style="width: 25px;"></button>
+                    <div class="dropdown-content">
+                        <a href="#">"Your account balance is $1,500.00. Thank you for banking with us."</a>
+                        <a href="#">"Your payment of $500.00 is due on June 1st. Please ensure that your account has sufficient funds to cover the payment."</a>
+                        <a href="#">"We have detected suspicious activity on your account. Pleasecontact us immediately to resolve this issue and protect your account from further unauthorized transactions.```
+
+                          7. Loan Approval Notification: A notification sent to a customer to inform them that their loan application has been approved."</a>
+                    </div>
+                  </div>
+
+
+                  <img src="images/call.png" style="width: 19px; margin-left: 60px;">
+                  <a href="#">Contact us</a>
+
+                <a href="#">  <img  src="images/settings.png" style="width: 19px; margin-left: 60px;"> </a>
+
+                
+    
+                  <button class="logbtn" > Log out</button>
+                 
+                
+              
+
+        </div>
+
+    </nav>
+    </div>
+</div>
+
+ <!--END of Main header-->
+
+
+
+   <!--Start of Sub header-->
+<div class="container-fluid">
+  <div class="row">
+     
+          <nav class="navbar"  id="subhead">
+              <div class="col">
+  
+                <div class="group">
+  
+               <a href="home.html"> <button id="subbarbtn">Home</button></a>
+               <a href="bankAccounts.html"> <button id="subbarbtn">Accounts</button></a>
+               <a href="creditCards.html"> <button id="subbarbtn">Cards</button></a>
+               <!-- Create the dropdown button -->
+    <div class="dropdown2">
+      <button>Transfers</button>
+      <!-- Create the dropdown content -->
+      <div class="dropdown-content2">
+        <a href="Transfer.html"><option value="option1">Transfer to Account</option></a>
+        <a href="paybills.html"><option value="option2">Pay Bills</option></a>
+        <a href="creditpayment.html"><option value="option3">Pay Credit Card</option></a>
+      </div>
+    </div>
+  
+             <!-- Create the dropdown button -->
+    <div class="dropdown2">
+      <button>Apply</button>
+      <!-- Create the dropdown content -->
+      <div class="dropdown-content2">
+        <a href="openBankAccount.html"><option value="option1">New Bank Account</option></a>
+        <a href="openCreditCard.html"><option value="option2">New Credit card</option></a>
+        <a href="loans.html"><option value="option3">Loan</option></a>
+        <a href="setreminder.html"><option value="option3">Set Reminder</option></a>
+      </div>
+    </div>
+              <a href="profile.html"> <button id="subbarbtn">My Profile</button></a>
+              <a href="report.html"> <button id="subbarbtn">Report</button></a>
+                
+                
+               </div>
+              
+  
+  
+          </nav>
+  
+      </div>
+  </div>
+  
+   <!--END of Subheader header-->
+
+  <!--Start of body-->
+
+  <h3 style="margin-top: 50px; margin-left: 30px; color: darkgray;"><img src="images/reports.png" style="margin-right: 20px; width: 30px;" >New Bank Account Application</h3>
+
+<div id="my-form-container">
+    <br>
+    <br>
+    
+ 
+    <br>
+  <br>
+
+  <div class="cont" style=" width: 80%;   margin-bottom: 100px;  margin-left: 40px; border-radius: 5px; background-color: #dddddd; padding-top: 30px; padding-left: 40px;" >
+    <form id="my-form">
+    <label for="name">Name:</label>
+    <input type="text" id="name" name="name" required>
+
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" required>
+
+    <label for="phone">Phone:</label>
+    <input type="tel" id="phone" name="phone" required>
+
+    <label for="employer">Address:</label>
+    <input type="text" id="employer" name="employer" required>
+
+    <label for="purpose">Bank Type:</label for="purpose"></label>
+    <select id="purpose" name="purpose" style="width: 60%; border-radius: 5px; height: 30px; border: 1px solid #ccc;" required>
+        <option value="">Select a type</option>
+        <option value="Saaving">Saving</option>
+        <option value="Checking Account">Checking Account </option>
+       
+    </select>
+    <label for="amount">Intial Deposit:</label>
+    <input type="number" id="amount" name="amount" required>
+   
+
+   
+    
+    <label for="message">Additional Comments:</label>
+    <textarea id="message" name="message" style="width: 60%; border-radius: 5px; height: 70px; border: 1px solid #ccc;"></textarea>
+    <div class="file-upload">
+        <label for="bank-statement">Upload National ID</label>
+        <input type="file" id="bank-statement" name="bank-statement">
+    </div>
+</br>
+</br>
+    <input type="submit" value="Submit" >
+</br>
+</br>
+
+</br>
+</form>
+</div>
+</div>
+
+<div class="flex-container" id="success-message-container" style="display:none ;">
+    <p style="color: black;">Form submitted successfully!</p>
+  </div>
+
+
+
+
+ <!--END of Body-->
+
+
+ <!--Start of Footer-->
+
+
+    
+<div class="container-fluid" >
+
+  <div class="row fixed-row-bottom" id="foot">
+      <nav class="navbar" >
+      <div class="col">
+        <img src="images/logowhite.png" style="width: 35px; height: 32px; margin-left: 15px;">
+
+        <a href="#"><button class="dropbtn" style="font-size: xx-small; margin-bottom: 9px;">Cookies Policy</button></a>
+        <a href="#"><button class="dropbtn" style="font-size: xx-small; margin-bottom: 9px;">Privacy Policy</button></a>
+        <a href="#"><button class="dropbtn" style="font-size: xx-small; margin-bottom: 9px;">User Agreements</button></a>
+      </div>
+
+      <div class="col-2">
+       
+        <a href="#" ><img src="images/facebook.png" style="width: 28px; height: 28px; margin-left: 38px;"></a>
+        <a href="#"><img src="images/instagram.png "  style="width: 25px; height: 26px; margin-left: 20px;"></a>
+        <a href="#"><img src="images/linkedin.png"  style="width: 22px; height :26 px; margin-left: 20px;"></a>
+       
+      </div>
+
+  </nav>
+  </div>
+</div>
+       
+<!--END of Footer-->
+</body>
+</html>
+<script>
+
+window.onclick = function(event) {
+  if (!event.target.matches('.dropbtn')) {
+    const dropdowns = document.getElementsByClassName('dropdown-content');
+    for (const dropdown of dropdowns) {
+      if (dropdown.style.display === 'block') {
+        dropdown.style.display = 'none';
+      }
+    }
+  }
+}
+const form = document.querySelector('#my-form');
+    form.addEventListener('submit', handleSubmit);
+
+    function handleSubmit(event) {
+      event.preventDefault();
+      // process the form data here
+
+      // hide the form container
+      const formContainer = document.querySelector('#my-form-container');
+      formContainer.style.display = 'none';
+
+      // show the success message container
+      const successContainer = document.querySelector('#success-message-container');
+      successContainer.style.display = 'flex';
+    }
+
+</script>

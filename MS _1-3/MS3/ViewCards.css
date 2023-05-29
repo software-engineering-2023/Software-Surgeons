@@ -1,0 +1,61 @@
+.header {
+    width: 100%;
+    height: 100px;
+    background-color: lightblue;
+    text-align: center;
+    margin-top: 0%;
+}
+
+body {
+    padding: 0%;
+    margin: 0%;
+}
+
+
+
+.tableHead {
+    background-color: lightblue;
+    font-weight: 600;
+}
+
+
+table {
+    border-collapse: collapse;
+    border: 2px solid rgb(200,200,200);
+    letter-spacing: 1px;
+    font-size: 2rem;
+    margin-top: 100px;
+    width: 100%;
+  }
+
+  td, th {
+    border: 2px solid rgb(173, 172, 172);
+    padding: 10px 20px;
+  }
+
+  td {
+    text-align: center;
+  }
+
+
+.main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.main > p {
+    text-align: center;
+    font-size: xx-large;
+}
+
+
+
+  
+
+
+
+table {
+    text-align: center;
+   
+}

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Sign Up</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <img src="images/logotransparent.png" alt="Logo" class="logo">
+    <form id="signupForm">
+      <input type="text" id="nationalId" name="nationalId" placeholder="National ID" required>
+      <input type="text" id="accountNo" name="accountNo" placeholder="Account Number" required>
+      <input type="email" id="email" name="email" placeholder="Email" required>
+      <input type="password" id="password" name="password" placeholder="Password" required>
+      <input type="password" id="confirmPassword" name="confirmPassword" placeholder="Confirm Password" required>
+      <input type="submit" value="Sign Up" id="signupSubmitBtn">
+      <div id="messageContainer"></div>
+    </form>
+  </div>
+
+  <script src="signup.js"></script>
+  
+</body>
+</html>

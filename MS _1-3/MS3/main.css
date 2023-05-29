@@ -1,0 +1,410 @@
+ 
+p {
+  font-family: 'Bahnschrift', sans-serif;
+  color: white;                                            
+}
+
+a{
+  font-family: 'Bahnschrift', sans-serif;
+  color: white; 
+  text-decoration: none;
+  font-style: bold; 
+}
+
+body{
+  margin: 0;
+}
+
+h1{
+  font-family: 'Bahnschrift', sans-serif;
+  color: white; 
+}
+
+h3{
+  font-family: 'Bahnschrift', sans-serif;
+  color: darkgray; 
+}
+
+h4{
+  font-family: 'Bahnschrift', sans-serif;
+  color: white; 
+}
+
+h5{
+  font-family: 'Bahnschrift', sans-serif;
+  color: white; 
+}
+
+h6{
+  font-family: 'Bahnschrift', sans-serif;
+  color: white; 
+}
+
+#head{
+  background-color: #003573;
+  height: 80px;
+}
+
+#foot{
+  background-color: #003573;
+  height: 50px;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+
+
+#subhead{
+  background-color: #88a5c4;
+  height: 40px;
+}
+
+
+
+
+.group{
+  display: flex;
+  justify-content: center;
+  margin: 0;
+
+}
+
+.group #subbarbtn{
+  background-color: transparent; /* Green */
+  border: none;
+  color: white;
+  height: 100%;
+  margin: 0;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 15px;
+  margin-left: 30px;
+  cursor: pointer;
+  float: left;
+  font-family:  'Bahnschrift', sans-serif;
+
+}
+.group #subbarbtn:hover{
+  background-color: #003573;
+}
+
+
+
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+  
+}
+
+.dropbtn {
+  background-color: transparent;
+  color: white;
+  size: 5px;
+  margin-bottom: 20px;
+  border: none;
+  cursor: pointer;
+}
+
+
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  background-color: grey;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  width: 500px;
+  border-bottom: 5px;
+  border-color: black;
+}
+
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.logbtn{
+  background-color: white;
+  height: 32px;
+  border: none;
+  color: #003573;
+  font-size: 10px;
+  font-family: 'Bahnschrift', sans-serif;
+  font-style: bold;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 16px;
+
+  margin-left: 50px;
+}
+
+
+
+/* Style the dropdown button text */
+.dropdown2 button {
+  display: inline-block;
+  background-color: transparent;
+  color: white;
+  font-size: 14px;
+  font-style: bold;
+  margin-left: 20px;
+  margin-bottom: 2px;
+  height: 30px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  
+        font-family: 'Bahnschrift', sans-serif;
+}
+.dropdown2:hover button{
+  background-color: #003573;
+}
+
+/* Style the dropdown content */
+.dropdown-content2 {
+  display: none;
+  position: absolute;
+  background-color: grey;
+  min-width: 160px;
+  z-index: 1;
+}
+
+/* Style the options inside the dropdown */
+.dropdown-content2 option {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+        font-family: 'Bahnschrift', sans-serif;
+      
+}
+
+/* Show the dropdown content when the button is clicked */
+.dropdown2:hover .dropdown-content2 {
+  display: block;
+  
+}
+.dropdown-content2 option:hover{
+  background-color: darkgray;
+}
+
+
+
+/* Style the label */
+label {
+  display: block;
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+
+/* Style the select element */
+select {
+  appearance: none;
+  background-color: #dddddd;
+  border: none;
+  border-radius: 0.25rem;
+  color: #333;
+  font-size: 1rem;
+  padding: 0.5rem;
+  width: 100%;
+  font-family: 'Bahnschrift', sans-serif;
+  font-style: italic;
+}
+
+/* Style the select arrow */
+select::-ms-expand {
+  display: none;
+}
+
+select::after {
+  content: "\25BC";
+  position: absolute;
+  top: 50%;
+  right: 0.5rem;
+  transform: translateY(-50%);
+  font-size: 0.75rem;
+}
+
+/* Style the selected option */
+option:checked {
+  background-color: #007bff;
+  color: #fff;
+}
+
+/* Style the option on hover */
+option:hover {
+  background-color: #007bff;
+  color: #fff;
+}
+
+form {
+  max-width: 500px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color:transparent;
+  border-radius: 5px;
+  
+}
+label {
+  font-size: 16px;
+  font-family: 'Bahnschrift', sans-serif;
+  
+  margin-bottom: 10px;
+  color: #3e3d3d;
+  
+}
+input[type="text"],
+input[type="number"],
+input[type="password"],
+input[type="datetime-local"],
+input[type="email"],
+input[type="tel"] {
+  display: block;
+  width: 90%;
+  padding: 8px;
+  font-size: 14px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+  margin-bottom: 20px;
+  
+}
+
+#message{
+  display: block;
+  width: 90%;
+  padding: 8px;
+  font-size: 14px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+  margin-bottom: 20px;
+}
+input[type="submit"] {
+  background-color: #003573;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  font-size: 12px;
+  cursor: pointer;
+}
+input[type="submit"]:hover {
+  background-color: white;
+  color:  #003573;
+}
+
+#appbtn{
+  background-color: #003573;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  font-size: 12px;
+  cursor: pointer;
+}
+#appbtn:hover{
+  background-color: white;
+  color:  #003573;
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+  padding: 0;
+  max-width: 800px;
+  margin: 0;
+  margin-bottom: 30px;
+  margin-top: 20px;
+  background-color: #fff;
+  box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
+  font-size: 7px;
+}
+th, td {
+  padding: 15px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+th {
+  background-color: #f2f2f2;
+  font-weight: bold;
+  color: #333;
+}
+tr:hover {
+  background-color: #f5f5f5;
+}
+
+.hover{
+
+  background-color: white;
+  color: black;
+  font-family: 'Bahnschrift', sans-serif;
+  border: 4px solid #88a5c4;
+  width: 160px;
+  height: 230px;
+  border-radius: 30px;
+
+  margin-top: 50px;
+
+  margin-bottom: 100px;
+  transition: 0.8s;
+  
+
+
+}
+
+
+
+.hover:hover{
+  
+  border-color: #003573;
+ 
+  
+  
+}
+
+.hover h4,h5{
+
+  margin-top: 30px;
+  margin-left: 42px;
+  color: #003573;
+  font-style: oblique;
+
+
+}
+
+.hover p{
+  color: #003573;
+  font-family: 'Bahnschrift', sans-serif;
+  font-size: 8px;
+
+  margin-top: 63px;
+  margin-left: 13px;
+
+
+
+
+}
+
+.wide {
+  min-width: 650px;
+  
+}
+
+
+.wide2 {
+  min-width: 700px;
+}

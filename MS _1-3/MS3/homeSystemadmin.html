@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <link href="main.css" rel="stylesheet" >
+    <title>Admin Homepage</title>
+</head>
+<style>
+  .pricing-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  gap: 2rem;
+}
+
+.pricing-plan {
+  flex: 1;
+  max-width: 400px;
+  padding: 20px;
+  background-color: #dddddd;
+  border-radius: 5px;
+  text-align: center;
+}
+
+.plan-title {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.plan-price {
+  font-size: 48px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.plan-features {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.plan-features li {
+  margin-bottom: 20px;
+}
+
+.plan-button {
+  padding: 10px;
+  color: #fff;
+  background-color: #003573;
+  border-radius: 5px;
+  border: none;
+}
+
+.hov button:hover{
+  background-color: white;
+  color: #003573;
+  
+}
+</style>
+<body>
+
+  <!--Start of Main header-->
+ 
+
+
+   
+
+  <div class="container-fluid">
+
+    <div class="row" >
+        <nav class="navbar"  id="head">
+        <div class="col-auto">
+
+          <img src="images/logowhite.png" style="width: 84px; margin-bottom: 6px;">
+
+        </div>
+        <div class="col-2">
+              <h6>Mr.Hussien(Admin-9902)</h6>
+
+              <p style="font-size: 7px;">Your last time login was on:<br> 18/05/2023  1:26 PMCLT <br> You have 0 unsuccessfull tries <br> since your last login</p>
+        </div>
+        <div class="col">
+          <div class="dropdown">
+            <button class="dropbtn"><img src="images/bell.png" style="width: 25px;"></button>
+            <div class="dropdown-content">
+                <a href="#">"Your account balance is $1,500.00. Thank you for banking with us."</a>
+                <a href="#">"Your payment of $500.00 is due on June 1st. Please ensure that your account has sufficient funds to cover the payment."</a>
+                <a href="#">"We have detected suspicious activity on your account. Pleasecontact us immediately to resolve this issue and protect your account from further unauthorized transactions.```
+
+                  7. Loan Approval Notification: A notification sent to a customer to inform them that their loan application has been approved."</a>
+            </div>
+          </div>
+
+        </div>
+
+        <div class="col-2" style="padding-bottom: 20px;">
+            
+              
+            
+
+
+                  <!-- <img src="images/call.png" style="width: 19px; margin-left: 60px;">
+                  <a href="#">Contact us</a> -->
+
+                  <!-- <a href="settings.html"><img src="images/settings.png" style="width: 19px; margin-left: 60px;"></a> -->
+
+
+                
+    
+                <button class="logbtn" onclick="logout()">Log out</button>
+                 
+                
+              
+
+        </div>
+
+    </nav>
+    </div>
+</div>
+
+ <!--END of Main header-->
+
+
+
+  <!--Start of Sub header-->
+<div class="container-fluid">
+<div class="row">
+   
+        <nav class="navbar"  id="subhead">
+            <div class="col">
+
+              <div class="group">
+
+             <a href="homeSystemadmin.html"> <button id="subbarbtn">Home</button></a>
+             <!-- <a href="AdminHandlerequests.html"> <button id="subbarbtn">Handle requests</button></a>
+             <a href="#"> <button id="subbarbtn">Add Banker</button></a> -->
+
+             <!-- Create the dropdown button -->
+
+           <!-- Create the dropdown button -->
+	
+              
+              
+             </div>
+            
+
+
+        </nav>
+
+    </div>
+</div>
+
+ <!--END of Subheader header-->
+
+  <!--Start of body-->
+
+<div class="container-fluid">
+  <!--Add your content here!!!!!!!!!!!!!!!!-->
+   <!--Start of body-->
+
+   <div class="flex-container" style="padding: 0;">
+    <!--Add your content here!!!!!!!!!!!!!!!!-->
+  <div class="row" style="margin-top: 90px; margin-bottom: 100px; margin-left: 100px; width: 90%;">
+    <div class="col">
+      <div class="pricing-plan">
+        <div class="plan-title">Add Banker</div>
+       
+        <div class="plan-price" style="margin-top: 30px;margin-bottom: 30px;"><img src="images/addbanker.png"  width="100" height="100" fill="currentColor" class="bi bi-eye" style="color: black;" viewBox="0 0 16 16" id="view-icon" onclick="viewPage()">
+          <path d="M16 8s-3-5.5-8-5.5S0 8 0 8s3 5.5 8 5.5S16 8 16 8zM1.173 8a13.133 13.133 0 0 1 1.66-2.043C4.12 4.668 5.88 3.5 8 3.5c2.12 0 3.879 1.168 5.168 2.457A13.133 13.133 0 0 1 14.828 8c-.058.087-.122.183-.195.288-.335.48-.83 1.12-1.465 1.755C11.879 11.332 10.119 12.5 8 12.5c-2.12 0-3.879-1.168-5.168-2.457A13.134 13.134 0 0 1 1.172 8z"/>
+          <path d="M8 5.5a2.5 2.5 0 1 0 0 5 2.5 2.5 0 0 0 0-5zM4.5 8a3.5 3.5 0 1 1 7 0 3.5 3.5 0 0 1-7 0z"/>
+        </svg></div>
+  
+        <div class="hov">
+        
+       
+         <button id="report-button"  class="plan-button">View</button>
+         </div>
+      </div>
+      </div>
+
+      <div class="col">
+      <div class="pricing-plan">
+        <div class="plan-title">Handle Reports</div>
+        <div class="plan-price" style="margin-top: 30px;margin-bottom: 30px;"><img src="images/requests.png" width="100" height="100" fill="currentColor" class="bi bi-tools" viewBox="0 0 16 16">
+          <path d="M1 0 0 1l2.2 3.081a1 1 0 0 0 .815.419h.07a1 1 0 0 1 .708.293l2.675 2.675-2.617 2.654A3.003 3.003 0 0 0 0 13a3 3 0 1 0 5.878-.851l2.654-2.617.968.968-.305.914a1 1 0 0 0 .242 1.023l3.27 3.27a.997.997 0 0 0 1.414 0l1.586-1.586a.997.997 0 0 0 0-1.414l-3.27-3.27a1 1 0 0 0-1.023-.242L10.5 9.5l-.96-.96 2.68-2.643A3.005 3.005 0 0 0 16 3c0-.269-.035-.53-.102-.777l-2.14 2.141L12 4l-.364-1.757L13.777.102a3 3 0 0 0-3.675 3.68L7.462 6.46 4.793 3.793a1 1 0 0 1-.293-.707v-.071a1 1 0 0 0-.419-.814L1 0Zm9.646 10.646a.5.5 0 0 1 .708 0l2.914 2.915a.5.5 0 0 1-.707.707l-2.915-2.914a.5.5 0 0 1 0-.708ZM3 11l.471.242.529.026.287.445.445.287.026.529L5 13l-.242.471-.026.529-.445.287-.287.445-.529.026L3 15l-.471-.242L2 14.732l-.287-.445L1.268 14l-.026-.529L1 13l.242-.471.026-.529.445-.287.287-.445.529-.026L3 11Z"/>
+        </svg></div>
+        <div class="hov">
+        <button  class="plan-button" id="request-button">View</a></button>
+      </div>
+      </div>
+    </div>
+    </div>
+    </div>
+
+
+ <!--END of Body-->
+
+  
+</div>
+
+
+
+ <!--END of Body-->
+
+
+ <!--Start of Footer-->
+
+
+    
+<div class="container-fluid">
+
+  <div class="row fixed-row-bottom" id="foot">
+      <nav class="navbar" >
+      <div class="col">
+        <img src="images/logowhite.png" style="width: 35px; height: 32px; margin-left: 15px;">
+
+        <a href="#"><button class="dropbtn" style="font-size: xx-small; margin-bottom: 9px;">Cookies Policy</button></a>
+        <a href="#"><button class="dropbtn" style="font-size: xx-small; margin-bottom: 9px;">Privacy Policy</button></a>
+        <a href="#"><button class="dropbtn" style="font-size: xx-small; margin-bottom: 9px;">User Agreements</button></a>
+      </div>
+
+      <div class="col-2">
+       
+        <a href="#" ><img src="images/facebook.png" style="width: 28px; height: 28px; margin-left: 38px;"></a>
+        <a href="#"><img src="images/instagram.png "  style="width: 25px; height: 26px; margin-left: 20px;"></a>
+        <a href="#"><img src="images/linkedin.png"  style="width: 22px; height :26 px; margin-left: 20px;"></a>
+       
+      </div>
+
+  </nav>
+  </div>
+</div>
+       
+<!--END of Footer-->
+</body>
+</html>
+<script>
+    
+ 
+    function logout() {
+       window.location.href = "login.html";
+    }
+
+    document.addEventListener("DOMContentLoaded", function() {
+       var reportButton = document.getElementById("report-button");
+       reportButton.addEventListener("click", function() {
+          window.location.href = "addBanker.html";
+       });
+    });
+
+    document.addEventListener("DOMContentLoaded", function() {
+       var reportButton = document.getElementById("request-button");
+       reportButton.addEventListener("click", function() {
+          window.location.href = "AdminHandlerequests.html";
+       });
+    });
+ 
+    window.onclick = function(event) {
+       if (!event.target.matches('.dropbtn')) {
+          const dropdowns = document.getElementsByClassName('dropdown-content');
+          for (const dropdown of dropdowns) {
+             if (dropdown.style.display === 'block') {
+                dropdown.style.display = 'none';
+             }
+          }
+       }
+    }
+ 
+    
+ 
+    window.onclick = function(event) {
+       if (!event.target.matches('.dropbtn')) {
+          const dropdowns = document.getElementsByClassName('dropdown-content');
+          for (const dropdown of dropdowns) {
+             if (dropdown.style.display === 'block') {
+                dropdown.style.display = 'none';
+             }
+          }
+       }
+    }
+ </script>
+ 
