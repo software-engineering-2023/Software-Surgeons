@@ -49,13 +49,13 @@
 
 
                   <img src="images/call.png" style="width: 19px; margin-left: 60px;">
-                  <a href="#">Contact us</a>
+                  <a href="contacts.html">Contact us</a>
 
                 <a href="settings.html">  <img  src="images/settings.png" style="width: 19px; margin-left: 60px;"> </a>
 
                 
     
-                  <button class="logbtn" > Log out</button>
+                  <button class="logbtn" onclick="logout()"> Log out</button>
                  
                 
               
@@ -253,9 +253,9 @@
       <div class="col">
         <img src="images/logowhite.png" style="width: 35px; height: 32px; margin-left: 15px;">
 
-        <a href="#"><button class="dropbtn" style="font-size: xx-small; margin-bottom: 9px;">Cookies Policy</button></a>
-        <a href="#"><button class="dropbtn" style="font-size: xx-small; margin-bottom: 9px;">Privacy Policy</button></a>
-        <a href="#"><button class="dropbtn" style="font-size: xx-small; margin-bottom: 9px;">User Agreements</button></a>
+        <a href="https://www.osano.com/articles/cookie-policy#:~:text=In%20short%2C%20a%20cookie%20policy,same%20as%20a%20privacy%20policy."><button class="dropbtn" style="font-size: xx-small; margin-bottom: 9px;">Cookies Policy</button></a>
+        <a href="https://en.wikipedia.org/wiki/Privacy_policy#:~:text=A%20privacy%20policy%20is%20a,a%20customer%20or%20client's%20data."><button class="dropbtn" style="font-size: xx-small; margin-bottom: 9px;">Privacy Policy</button></a>
+        <a href="https://www.termsfeed.com/blog/sample-user-agreement-template/"><button class="dropbtn" style="font-size: xx-small; margin-bottom: 9px;">User Agreements</button></a>
       </div>
 
       <div class="col-2">
@@ -273,3 +273,9 @@
 <!--END of Footer-->
 </body>
 </html>
+
+<script>
+   function logout() {
+       window.location.href = "login.html";
+    }
+</script>

@@ -8,6 +8,21 @@
     <link href="mainnour.css" rel="stylesheet" >
     <title>My Profile</title>
 </head>
+<style>
+    .btnn {
+background-color: #003573;
+color: white;
+padding: 10px 20px;
+border: none;
+border-radius: 5px;
+font-size: 12px;
+cursor: pointer;
+}
+.btnn:hover {
+background-color: #98b3d3;
+color:  white;
+}
+</style>
 <body>
 
   <!--Start of Main header-->
@@ -53,7 +68,7 @@
 
                 
     
-                  <button class="logbtn" > Log out</button>
+                  <button class="logbtn" onclick="logout()" > Log out</button>
                  
                 
               
@@ -191,7 +206,7 @@
                             </div>
                         </div>
                         <!-- Save changes button-->
-                        <button onclick="saveChanges()" class="btn btn-primary" type="button">Save changes</button>
+                        <button onclick="saveChanges()" class="btnn" type="button">Save changes</button>
                     </form>
                 </div>
             </div>
@@ -293,4 +308,8 @@ function saveChanges() {
 			// Show file name in console log
 			console.log("Selected file: " + file.name);
 		});
+
+        function logout() {
+       window.location.href = "login.html";
+    }
 </script>

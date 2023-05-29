@@ -53,7 +53,7 @@
 
                 
     
-                  <button class="logbtn" > Log out</button>
+                  <button class="logbtn" onclick="logout()" > Log out</button>
                  
                 
               
@@ -135,7 +135,7 @@
       <input type="number" id="amount" name="amount" min="1" step="0.01"> 
       
     
-      <input type="submit" value="Submit">
+      <input type="submit" value="Submit" onclick="handleRequest(true)">
     </form>
 
 </div>
@@ -177,3 +177,13 @@
 <!--END of Footer-->
 </body>
 </html>
+<script>
+   function handleRequest(isAccepted) {
+    var body = document.getElementsByTagName('body')[0];
+    body.innerHTML = '<div class="container-fluid"><div class="row"><div class="col text-center"><h2>Request Handled Successfully</h2></div></div></div>';
+  }
+
+  function logout() {
+       window.location.href = "login.html";
+    }
+</script>

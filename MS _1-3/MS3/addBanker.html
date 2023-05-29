@@ -160,7 +160,7 @@ input[type="submit"]:hover {
 
       <label for="to_account" style="margin-top: 13px;">Password:</label>
       <input type="text" id="to_account" name="to_account">
-  <input type="submit" value="Add" id="submit-btn">
+  <input type="submit" value="Add" id="submit-btn" onclick="handleRequest(true)">
     </form>
 
 </div>
@@ -215,6 +215,11 @@ input[type="submit"]:hover {
     function logout() {
        window.location.href = "login.html";
     }
+
+    function handleRequest(isAccepted) {
+    var body = document.getElementsByTagName('body')[0];
+    body.innerHTML = '<div class="container-fluid"><div class="row"><div class="col text-center"><h2>Request Handled Successfully</h2></div></div></div>';
+  }
  
     
  

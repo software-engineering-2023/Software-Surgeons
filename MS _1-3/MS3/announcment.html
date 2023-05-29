@@ -135,7 +135,7 @@ color:  #003573;
     </div>
     <div class="row">
         <div class="col">
-            <input type="submit" value="Announce" class="submit-button" id="Report" style="margin-top: 20px;">
+            <input type="submit" value="Announce" class="submit-button" id="Report" style="margin-top: 20px;" onclick="handleRequest(true)">
         </div>
     </div>
     <div id="success-message" style="display: none;">
@@ -182,6 +182,12 @@ color:  #003573;
     function redirectToProfile() {
        window.location.href = "myprofilebanker.html";
     }
+
+    function handleRequest(isAccepted) {
+    var body = document.getElementsByTagName('body')[0];
+    body.innerHTML = '<div class="container-fluid"><div class="row"><div class="col text-center"><h2>Request Handled Successfully</h2></div></div></div>';
+  }
+
  
     function logout() {
        window.location.href = "login.html";

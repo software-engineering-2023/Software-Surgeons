@@ -69,7 +69,7 @@
 
                 
     
-                  <button class="logbtn" > Log out</button>
+                  <button class="logbtn" onclick="logout()" > Log out</button>
                  
                 
               
@@ -84,54 +84,54 @@
 
 
 
-  <!--Start of Sub header-->
+    <!--Start of Sub header-->
 <div class="container-fluid">
-<div class="row">
-   
-        <nav class="navbar"  id="subhead">
-            <div class="col">
-
-              <div class="group">
-
-             <a href="home.html"> <button id="subbarbtn">Home</button></a>
-             <a href="#"> <button id="subbarbtn">Accounts</button></a>
-             <a href="#"> <button id="subbarbtn">Cards</button></a>
-             <!-- Create the dropdown button -->
-	<div class="dropdown2">
-		<button>Transfers</button>
-		<!-- Create the dropdown content -->
-		<div class="dropdown-content2">
-			<a href="#"><option value="option1">Transfer to Account</option></a>
-			<a href="#"><option value="option2">Pay Bills</option></a>
-			<a href="#"><option value="option3">Pay Credit Card</option></a>
-		</div>
-	</div>
-
-           <!-- Create the dropdown button -->
-	<div class="dropdown2">
-		<button>Apply</button>
-		<!-- Create the dropdown content -->
-		<div class="dropdown-content2">
-			<a href="#"><option value="option1">New Bank Account</option></a>
-			<a href="#"><option value="option2">New Credit card</option></a>
-			<a href="#"><option value="option3">Loan</option></a>
-      <a href="#"><option value="option3">Set Reminder</option></a>
-		</div>
-	</div>
-            <a href="#"> <button id="subbarbtn">My Profile</button></a>
-            <a href="#"> <button id="subbarbtn">Report</button></a>
-              
-              
-             </div>
-            
-
-
-        </nav>
-
+  <div class="row">
+     
+          <nav class="navbar"  id="subhead">
+              <div class="col">
+  
+                <div class="group">
+  
+               <a href="home.html"> <button id="subbarbtn">Home</button></a>
+               <a href="bankAccounts.html"> <button id="subbarbtn">Accounts</button></a>
+               <a href="creditCards.html"> <button id="subbarbtn">Cards</button></a>
+               <!-- Create the dropdown button -->
+    <div class="dropdown2">
+      <button>Transfers</button>
+      <!-- Create the dropdown content -->
+      <div class="dropdown-content2">
+        <a href="Transfer.html"><option value="option1">Transfer to Account</option></a>
+        <a href="paybills.html"><option value="option2">Pay Bills</option></a>
+        <a href="creditpayment.html"><option value="option3">Pay Credit Card</option></a>
+      </div>
     </div>
-</div>
-
- <!--END of Subheader header-->
+  
+             <!-- Create the dropdown button -->
+    <div class="dropdown2">
+      <button>Apply</button>
+      <!-- Create the dropdown content -->
+      <div class="dropdown-content2">
+        <a href="openBankAccount.html"><option value="option1">New Bank Account</option></a>
+        <a href="openCreditCard.html"><option value="option2">New Credit card</option></a>
+        <a href="loans.html"><option value="option3">Loan</option></a>
+        <a href="setreminder.html"><option value="option3">Set Reminder</option></a>
+      </div>
+    </div>
+              <a href="profile.html"> <button id="subbarbtn">My Profile</button></a>
+              <a href="report.html"> <button id="subbarbtn">Report</button></a>
+                
+                
+               </div>
+              
+  
+  
+          </nav>
+  
+      </div>
+  </div>
+  
+   <!--END of Subheader header-->
 
   <!--Start of body-->
   <h3 style="color: darkgray; margin-top: 40px; margin-left: 30px;"><img src="images/accounts.png" style="margin-right: 20px; width: 40px;" >Transactions for Account Number: <span id="account-number"></span></h3>
@@ -210,6 +210,10 @@
 </body>
 </html>
 <script>
+
+function logout() {
+       window.location.href = "login.html";
+    }
 
 window.onclick = function(event) {
   if (!event.target.matches('.dropbtn')) {

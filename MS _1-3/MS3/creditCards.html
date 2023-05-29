@@ -69,7 +69,7 @@
 
                 
     
-                  <button class="logbtn" > Log out</button>
+                  <button class="logbtn" onclick="logout()" > Log out</button>
                  
                 
               
@@ -263,5 +263,9 @@ let x = document.querySelectorAll(".myDIV");
             .toLocaleString('en');
         x[i].innerHTML = num;
         x[i].classList.add("currSign");
+    }
+
+    function logout() {
+       window.location.href = "login.html";
     }
 </script>

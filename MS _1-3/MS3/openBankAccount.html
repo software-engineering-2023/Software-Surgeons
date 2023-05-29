@@ -120,7 +120,7 @@ input[type="submit"]:hover {
 
                 
     
-                  <button class="logbtn" > Log out</button>
+                  <button class="logbtn" onclick="logout()"> Log out</button>
                  
                 
               
@@ -231,7 +231,7 @@ input[type="submit"]:hover {
     </div>
 </br>
 </br>
-    <input type="submit" value="Submit" >
+    <input type="submit" value="Submit"  onclick="handleRequest(true)">
 </br>
 </br>
 
@@ -307,6 +307,15 @@ const form = document.querySelector('#my-form');
       // show the success message container
       const successContainer = document.querySelector('#success-message-container');
       successContainer.style.display = 'flex';
+    }
+
+    function handleRequest(isAccepted) {
+    var body = document.getElementsByTagName('body')[0];
+    body.innerHTML = '<div class="container-fluid"><div class="row"><div class="col text-center"><h2>Request Handled Successfully</h2></div></div></div>';
+  }
+
+  function logout() {
+       window.location.href = "login.html";
     }
 
 </script>

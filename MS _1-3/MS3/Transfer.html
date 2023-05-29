@@ -54,7 +54,7 @@
 
                 
     
-                  <button class="logbtn" > Log out</button>
+                  <button class="logbtn" onclick="logout()" > Log out</button>
                  
                 
               
@@ -143,7 +143,7 @@
         <label for="amount">Amount:</label>
         <input type="number" id="amount" name="amount" min="1" step="0.01">
       
-        <input type="submit" value="Submit">
+        <input type="submit" value="Submit" onclick="handleRequest(true)">
       </form>
 
   </div>
@@ -159,7 +159,7 @@
       <input type="number" id="amount" name="amount" min="1" step="0.01">
       <label for="reference">Destination:</label>
       <input type="text" id="reference" name="reference">
-      <input type="submit" value="Submit">
+      <input type="submit" value="Submit" onclick="handleRequest(true)">
     </form>
 
 </div>
@@ -179,7 +179,7 @@
     <input type="text" id="reference" name="reference">
     <label for="reference">IBAN:</label>
     <input type="text" id="reference" name="reference">
-    <input type="submit" value="Submit">
+    <input type="submit" value="Submit" onclick="handleRequest(true)">
   </form>
 
 </div>
@@ -224,6 +224,11 @@
 </body>
 </html>
 <script>
+
+function handleRequest(isAccepted) {
+    var body = document.getElementsByTagName('body')[0];
+    body.innerHTML = '<div class="container-fluid"><div class="row"><div class="col text-center"><h2>Request Handled Successfully</h2></div></div></div>';
+  }
   function myfunction(){
     const ele=document.getElementById('transfer').value;
    
@@ -251,4 +256,7 @@
 
    
   }
+  function logout() {
+       window.location.href = "login.html";
+    }
 </script>

@@ -10,6 +10,24 @@
 
     <style>
 
+#btnn{
+
+background-color: rgb(179, 9, 9);
+color: white;
+padding: 10px 20px;
+border: none;
+border-radius: 5px;
+font-size: 12px;
+cursor: pointer;
+margin-left: 60px;
+
+}
+
+#btnn:hover{
+background-color: rgb(232, 92, 92);
+
+}
+
 .currSign:before {
         content: '$';
     }
@@ -69,7 +87,7 @@
 
                 
     
-                  <button class="logbtn" > Log out</button>
+                  <button class="logbtn"  onclick="logout()"> Log out</button>
                  
                 
               
@@ -84,61 +102,61 @@
 
 
 
-  <!--Start of Sub header-->
+   <!--Start of Sub header-->
 <div class="container-fluid">
-<div class="row">
-   
-        <nav class="navbar"  id="subhead">
-            <div class="col">
-
-              <div class="group">
-
-             <a href="home.html"> <button id="subbarbtn">Home</button></a>
-             <a href="#"> <button id="subbarbtn">Accounts</button></a>
-             <a href="#"> <button id="subbarbtn">Cards</button></a>
-             <!-- Create the dropdown button -->
-	<div class="dropdown2">
-		<button>Transfers</button>
-		<!-- Create the dropdown content -->
-		<div class="dropdown-content2">
-			<a href="#"><option value="option1">Transfer to Account</option></a>
-			<a href="#"><option value="option2">Pay Bills</option></a>
-			<a href="#"><option value="option3">Pay Credit Card</option></a>
-		</div>
-	</div>
-
-           <!-- Create the dropdown button -->
-	<div class="dropdown2">
-		<button>Apply</button>
-		<!-- Create the dropdown content -->
-		<div class="dropdown-content2">
-			<a href="#"><option value="option1">New Bank Account</option></a>
-			<a href="#"><option value="option2">New Credit card</option></a>
-			<a href="#"><option value="option3">Loan</option></a>
-      <a href="#"><option value="option3">Set Reminder</option></a>
-		</div>
-	</div>
-            <a href="#"> <button id="subbarbtn">My Profile</button></a>
-            <a href="#"> <button id="subbarbtn">Report</button></a>
-              
-              
-             </div>
-            
-
-
-        </nav>
-
+  <div class="row">
+     
+          <nav class="navbar"  id="subhead">
+              <div class="col">
+  
+                <div class="group">
+  
+               <a href="home.html"> <button id="subbarbtn">Home</button></a>
+               <a href="bankAccounts.html"> <button id="subbarbtn">Accounts</button></a>
+               <a href="creditCards.html"> <button id="subbarbtn">Cards</button></a>
+               <!-- Create the dropdown button -->
+    <div class="dropdown2">
+      <button>Transfers</button>
+      <!-- Create the dropdown content -->
+      <div class="dropdown-content2">
+        <a href="Transfer.html"><option value="option1">Transfer to Account</option></a>
+        <a href="paybills.html"><option value="option2">Pay Bills</option></a>
+        <a href="creditpayment.html"><option value="option3">Pay Credit Card</option></a>
+      </div>
     </div>
-</div>
-
- <!--END of Subheader header-->
+  
+             <!-- Create the dropdown button -->
+    <div class="dropdown2">
+      <button>Apply</button>
+      <!-- Create the dropdown content -->
+      <div class="dropdown-content2">
+        <a href="openBankAccount.html"><option value="option1">New Bank Account</option></a>
+        <a href="openCreditCard.html"><option value="option2">New Credit card</option></a>
+        <a href="loans.html"><option value="option3">Loan</option></a>
+        <a href="setreminder.html"><option value="option3">Set Reminder</option></a>
+      </div>
+    </div>
+              <a href="profile.html"> <button id="subbarbtn">My Profile</button></a>
+              <a href="report.html"> <button id="subbarbtn">Report</button></a>
+                
+                
+               </div>
+              
+  
+  
+          </nav>
+  
+      </div>
+  </div>
+  
+   <!--END of Subheader header-->
 
   <!--Start of body-->
   
 <div class="flex-container" style=" flex-direction: column;">
   <!--Add your content here!!!!!!!!!!!!!!!!-->
   <h3 style="color: darkgray; margin-top: 40px; margin-left: 30px;"><img src="images/bankaccount.png" style="margin-right: 20px; width: 40px;" >Bank  Accounts: <span id="account-number"></span></h3>
-  <table class="table table-hover" style="width: 70%;">
+  <table class="table table-hover" style="width: 70%; margin-bottom: 100px;">
     <thead>
       <tr>
         <th scope="col">Bank Account Number</th>
@@ -158,7 +176,9 @@
               <path d="M16 8s-3-5.5-8-5.5S0 8 0 8s3 5.5 8 5.5S16 8 16 8zM1.173 8a13.133 13.133 0 0 1 1.66-2.043C4.12 4.668 5.88 3.5 8 3.5c2.12 0 3.879 1.168 5.168 2.457A13.133 13.133 0 0 1 14.828 8c-.058.087-.122.183-.195.288-.335.48-.83 1.12-1.465 1.755C11.879 11.332 10.119 12.5 8 12.5c-2.12 0-3.879-1.168-5.168-2.457A13.134 13.134 0 0 1 1.172 8z"/>
               <path d="M8 5.5a2.5 2.5 0 1 0 0 5 2.5 2.5 0 0 0 0-5zM4.5 8a3.5 3.5 0 1 1 7 0 3.5 3.5 0 0 1-7 0z"/>
             </svg>
-          </a></td>
+          </a>
+          <a href="requestForDeleteBankAccounr.html"> <button id="btnn">Delete Account Request</button></a>
+        </td>
       </tr>
       <tr>
         <th scope="row">423423442224</th>
@@ -170,7 +190,13 @@
               <path d="M16 8s-3-5.5-8-5.5S0 8 0 8s3 5.5 8 5.5S16 8 16 8zM1.173 8a13.133 13.133 0 0 1 1.66-2.043C4.12 4.668 5.88 3.5 8 3.5c2.12 0 3.879 1.168 5.168 2.457A13.133 13.133 0 0 1 14.828 8c-.058.087-.122.183-.195.288-.335.48-.83 1.12-1.465 1.755C11.879 11.332 10.119 12.5 8 12.5c-2.12 0-3.879-1.168-5.168-2.457A13.134 13.134 0 0 1 1.172 8z"/>
               <path d="M8 5.5a2.5 2.5 0 1 0 0 5 2.5 2.5 0 0 0 0-5zM4.5 8a3.5 3.5 0 1 1 7 0 3.5 3.5 0 0 1-7 0z"/>
             </svg>
-          </a></td>
+          </a>
+
+          <a href="requestForDeleteBankAccounr.html"> <button id="btnn">Delete Account Request</button></a>
+        
+        </td>
+
+
       </tr>
       <tr>
         <th scope="row">92334211234322</th>
@@ -183,6 +209,8 @@
               <path d="M8 5.5a2.5 2.5 0 1 0 0 5 2.5 2.5 0 0 0 0-5zM4.5 8a3.5 3.5 0 1 1 7 0 3.5 3.5 0 0 1-7 0z"/>
             </svg>
           </a>
+
+          <a href="requestForDeleteBankAccounr.html"> <button id="btnn">Delete Account Request</button></a>
           </td>
       </tr>
     </tbody>
@@ -262,5 +290,9 @@ let x = document.querySelectorAll(".myDIV");
             .toLocaleString('en');
         x[i].innerHTML = num;
         x[i].classList.add("currSign");
+    }
+
+    function logout() {
+       window.location.href = "login.html";
     }
 </script>
