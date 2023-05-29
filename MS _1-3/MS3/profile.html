@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <link href="mainnour.css" rel="stylesheet" >
+    <title>Document</title>
+</head>
+<body>
+
+  <!--Start of Main header-->
+ 
+
+
+   
+
+        <div class="container-fluid">
+
+    <div class="row" >
+        <nav class="navbar"  id="head">
+        <div class="col-auto">
+
+          <img src="images/logowhite.png" style="width: 84px; margin-bottom: 6px;">
+
+        </div>
+        <div class="col">
+              <h6>Welcome Youssef Alaa Mahmoud Amer</h6>
+
+              <p style="font-size: 7px;">Your last time login was on:<br> 18/05/2023  1:26 PMCLT <br> You have 0 unsuccessfull tries <br> since your last login</p>
+        </div>
+
+        <div class="col-5">
+            
+              
+                <div class="dropdown">
+                    <button class="dropbtn"><img src="images/bell.png" style="width: 25px;"></button>
+                    <div class="dropdown-content">
+                        <a href="#">"Your account balance is $1,500.00. Thank you for banking with us."</a>
+                        <a href="#">"Your payment of $500.00 is due on June 1st. Please ensure that your account has sufficient funds to cover the payment."</a>
+                        <a href="#">"We have detected suspicious activity on your account. Pleasecontact us immediately to resolve this issue and protect your account from further unauthorized transactions.```
+
+                          7. Loan Approval Notification: A notification sent to a customer to inform them that their loan application has been approved."</a>
+                    </div>
+                  </div>
+
+
+                  <img src="images/call.png" style="width: 19px; margin-left: 60px;">
+                  <a href="#">Contact us</a>
+
+                <a href="#">  <img  src="images/settings.png" style="width: 19px; margin-left: 60px;"> </a>
+
+                
+    
+                  <button class="logbtn" > Log out</button>
+                 
+                
+              
+
+        </div>
+
+    </nav>
+    </div>
+</div>
+
+ <!--END of Main header-->
+
+
+
+  <!--Start of Sub header-->
+<div class="container-fluid">
+<div class="row">
+   
+        <nav class="navbar"  id="subhead">
+            <div class="col">
+
+              <div class="group">
+
+             <a href="home.html"> <button id="subbarbtn">Home</button></a>
+             <a href="#"> <button id="subbarbtn">Accounts</button></a>
+             <a href="#"> <button id="subbarbtn">Cards</button></a>
+             <!-- Create the dropdown button -->
+	<div class="dropdown2">
+		<button>Transfers</button>
+		<!-- Create the dropdown content -->
+		<div class="dropdown-content2">
+			<a href="#"><option value="option1">Transfer to Account</option></a>
+			<a href="#"><option value="option2">Pay Bills</option></a>
+			<a href="#"><option value="option3">Pay Credit Card</option></a>
+		</div>
+	</div>
+
+           <!-- Create the dropdown button -->
+	<div class="dropdown2">
+		<button>Apply</button>
+		<!-- Create the dropdown content -->
+		<div class="dropdown-content2">
+			<a href="#"><option value="option1">New Bank Account</option></a>
+			<a href="#"><option value="option2">New Credit card</option></a>
+			<a href="#"><option value="option3">Loan</option></a>
+      <a href="#"><option value="option3">Set Reminder</option></a>
+		</div>
+	</div>
+            <a href="#"> <button id="subbarbtn">My Profile</button></a>
+            <a href="#"> <button id="subbarbtn">Report</button></a>
+              
+              
+             </div>
+            
+
+
+        </nav>
+
+    </div>
+</div>
+
+ <!--END of Subheader header-->
+
+  <!--Start of body-->
+  <div class="container-xl px-4 mt-4">
+    <!-- Account page navigation-->
+ 
+    <hr class="mt-0 mb-4">
+    <div class="row">
+        <div class="col-xl-4">
+            <!-- Profile picture card-->
+            <div class="card mb-4 mb-xl-0">
+                <div class="card-header">Profile Picture</div>
+                <div class="card-body text-center">
+                    <!-- Profile picture image-->
+                    <img class="img-account-profile rounded-circle mb-2" src="http://bootdey.com/img/Content/avatar/avatar1.png" alt="">
+                    <!-- Profile picture help block-->
+                    <div class="small font-italic text-muted mb-4">JPG or PNG no larger than 5 MB</div>
+                    <!-- Profile picture upload button-->
+                    <input type="file" id="bank-statement" name="bank-statement">
+    
+                </div>
+            </div>
+        </div>
+        <div class="col-xl-8">
+            <!-- Account details card-->
+            <div class="card mb-4">
+                <div class="card-header">Account Details</div>
+                <div class="card-body">
+                    <form>
+                        <!-- Form Group (username)-->
+                        <div class="mb-3">
+                            <label class="small mb-1" for="inputUsername">Username (how your name will appear to other users on the site)</label>
+                            <input class="form-control" id="inputUsername" type="text" placeholder="Enter your username" value="username">
+                        </div>
+                        <!-- Form Row-->
+                        <div class="row gx-3 mb-3">
+                            <!-- Form Group (first name)-->
+                            <div class="col-md-6">
+                                <label class="small mb-1" for="inputFirstName">First name</label>
+                                <input class="form-control" id="inputFirstName" type="text" placeholder="Enter your first name" value="Valerie">
+                            </div>
+                            <!-- Form Group (last name)-->
+                            <div class="col-md-6">
+                                <label class="small mb-1" for="inputLastName">Last name</label>
+                                <input class="form-control" id="inputLastName" type="text" placeholder="Enter your last name" value="Luna">
+                            </div>
+                        </div>
+                        <!-- Form Row        -->
+                        <div class="row gx-3 mb-3">
+                            <!-- Form Group (organization name)-->
+                           
+                            <!-- Form Group (location)-->
+                            <div class="col-md-6">
+                                <label class="small mb-1" for="inputLocation">Location</label>
+                                <input class="form-control" id="inputLocation" type="text" placeholder="Enter your location" value="San Francisco, CA">
+                            </div>
+                        </div>
+                        <!-- Form Group (email address)-->
+                        <div class="mb-3">
+                            <label class="small mb-1" for="inputEmailAddress">Email address</label>
+                            <input class="form-control" id="inputEmailAddress" type="email" placeholder="Enter your email address" value="name@example.com">
+                        </div>
+                        <!-- Form Row-->
+                        <div class="row gx-3 mb-3">
+                            <!-- Form Group (phone number)-->
+                            <div class="col-md-6">
+                                <label class="small mb-1" for="inputPhone">Phone number</label>
+                                <input class="form-control" id="inputPhone" type="tel" placeholder="Enter your phone number" value="555-123-4567">
+                            </div>
+                            <!-- Form Group (birthday)-->
+                            <div class="col-md-6">
+                                <label class="small mb-1" for="inputBirthday">Birthday</label>
+                                <input class="form-control" id="inputBirthday" type="text" name="birthday" placeholder="Enter your birthday" value="06/10/1988">
+                            </div>
+                        </div>
+                        <!-- Save changes button-->
+                        <button onclick="saveChanges()" class="btn btn-primary" type="button">Save changes</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+ <!--END of Body-->
+
+
+ <!--Start of Footer-->
+
+
+    
+<div class="container-fluid">
+
+  <div class="row fixed-row-bottom" id="foot">
+      <nav class="navbar" >
+      <div class="col">
+        <img src="images/logowhite.png" style="width: 35px; height: 32px; margin-left: 15px;">
+
+        <a href="#"><button class="dropbtn" style="font-size: xx-small; margin-bottom: 9px;">Cookies Policy</button></a>
+        <a href="#"><button class="dropbtn" style="font-size: xx-small; margin-bottom: 9px;">Privacy Policy</button></a>
+        <a href="#"><button class="dropbtn" style="font-size: xx-small; margin-bottom: 9px;">User Agreements</button></a>
+      </div>
+
+      <div class="col-2">
+       
+        <a href="#" ><img src="images/facebook.png" style="width: 28px; height: 28px; margin-left: 38px;"></a>
+        <a href="#"><img src="images/instagram.png "  style="width: 25px; height: 26px; margin-left: 20px;"></a>
+        <a href="#"><img src="images/linkedin.png"  style="width: 22px; height :26 px; margin-left: 20px;"></a>
+       
+      </div>
+
+  </nav>
+  </div>
+</div>
+       
+<!--END of Footer-->
+</body>
+</html>
+<script>
+
+window.onclick = function(event) {
+  if (!event.target.matches('.dropbtn')) {
+    const dropdowns = document.getElementsByClassName('dropdown-content');
+    for (const dropdown of dropdowns) {
+      if (dropdown.style.display === 'block') {
+        dropdown.style.display = 'none';
+      }
+    }
+  }
+}
+
+
+
+	
+		// Add event listener for form submission
+		document.getElementById("profile-form").addEventListener("submit", function(event) {
+			event.preventDefault(); // Prevent form submission
+
+			// Get selected file
+			var file = document.getElementById("profile-picture").files[0];
+
+			// Create object URL for file preview
+			var url = URL.createObjectURL(file);
+
+			// Set preview image source
+			document.getElementById("profile-preview").src = url;
+
+			// Perform upload functionality here
+			// ...
+
+			// Show success message
+			alert("Profile picture changed successfully!");
+		});
+	
+function saveChanges() {
+			// Perform save changes functionality here
+
+			// Show pop-up message
+			alert("Changes saved successfully!");
+		}
+        function selectPhoto() {
+			// Trigger click event on hidden file input element
+			document.getElementById("photo-file").click();
+		}
+
+		// Add event listener for file input element
+		document.getElementById("photo-file").addEventListener("change", function() {
+			// Get selected file
+			var file = this.files[0];
+
+			// Perform upload functionality here
+
+			// Show file name in console log
+			console.log("Selected file: " + file.name);
+		});
+</script>
